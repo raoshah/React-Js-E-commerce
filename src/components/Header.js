@@ -94,7 +94,7 @@ const Navbar = () => {
                     </div>
                 ) : (
                     <div className="desktop-menu">
-                               <Link to={'/profile'} className="login-icon "><FaRegUserCircle /> {userInfo.name}</Link>
+                               <Link to={'/profile'} className="login-icon "><FaRegUserCircle /> {userInfo ? userInfo.name : "Login"}</Link>
                                <Link to={'/myorder'} className="login-icon"> <img src={myOrder} alt='order-img' className='logoImage'></img> My order</Link>
                     </div>
                 )}
